@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>큐(CUEE) - 어르신 기차 예매 길잡이</title>
+<meta name="description" content="코레일+ 앱 위에 다음에 누를 곳 하나만 비춰, 어르신이 혼자 기차표를 예매하도록 돕는 안드로이드 접근성 앱입니다.">
+<meta property="og:title" content="큐(CUEE) - 어르신 기차 예매 길잡이">
+<meta property="og:description" content="다음에 누를 곳 하나만 비춰 드려요. 대신 누르지 않아요.">
+<meta property="og:image" content="icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --navy:#0d2654; --blue:#0a68e8; --bg:#eef4ff; --text:#1b2433; --muted:#4d5b70; --card:#ffffff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; color:var(--text); background:var(--bg); font-size:19px; line-height:1.65; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 48px; }
+  header { display:flex; align-items:center; gap:16px; }
+  header img { width:72px; height:72px; border-radius:18px; }
+  h1 { font-size:30px; line-height:1.3; margin:0; color:var(--navy); }
+  .lead { font-size:23px; font-weight:700; color:var(--navy); margin:28px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border-radius:18px; padding:22px 20px; margin:16px 0; box-shadow:0 2px 10px rgba(13,38,84,.06); }
+  h2 { font-size:22px; margin:0 0 12px; color:var(--navy); }
+  ol, ul { margin:0; padding-left:24px; }
+  li { margin:6px 0; }
+  .btn { display:block; text-align:center; text-decoration:none; font-weight:700; font-size:20px; padding:16px; border-radius:14px; margin:12px 0; }
+  .btn.primary { background:var(--blue); color:#fff; }
+  .btn.secondary { background:#e3edff; color:var(--blue); }
+  .note { font-size:16px; color:var(--muted); }
+  .shot { display:block; width:100%; max-width:360px; margin:8px auto 0; border-radius:16px; }
+  footer { font-size:15px; color:var(--muted); margin-top:32px; }
+  footer a { color:var(--blue); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="큐 앱 아이콘">
+    <h1>큐(CUEE)<br>어르신 기차 예매 길잡이</h1>
+  </header>
+
+  <p class="lead">코레일+ 앱 위에 '다음에 누를 곳' 하나만 비춰, 어르신이 혼자 기차표를 예매하도록 돕습니다.</p>
+  <p class="sub">말 한마디로 조건을 알려 주면, 지금 눌러야 할 버튼에 초록 테두리를 보여 주고 쉬운 말로 소리 내어 알려 드려요.</p>
+
+  <img class="shot" src="shot.png" alt="코레일+ 화면 위에 큐가 가는 날 칸을 초록 테두리로 짚어 주는 모습">
+
+  <section class="card">
+    <h2>이렇게 써요</h2>
+    <ol>
+      <li>코레일+ 앱을 엽니다.</li>
+      <li>화면 가장자리의 '큐' 버튼을 누릅니다.</li>
+      <li>"내일 진주에서 서울, 어른 한 명"처럼 말하거나 적습니다.</li>
+      <li>초록 테두리가 짚어 주는 곳을 직접 누르며 따라갑니다.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>안전 원칙</h2>
+    <ul>
+      <li>큐는 대신 누르지 않습니다. 버튼은 사용자가 직접 누릅니다.</li>
+      <li>로그인, 개인정보, 열차 선택, 예매 확정과 결제는 사용자가 직접 확인하고 진행합니다.</li>
+      <li>화면 글자와 음성은 저장하거나 보내지 않습니다.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="install">
+    <h2>지금 무료로 써 보기 (안드로이드)</h2>
+    <p class="note">현재 Google Play 비공개 테스트 중입니다. 아래 순서대로 눌러 주세요. Play 스토어에 로그인된 같은 구글 계정을 써야 합니다.</p>
+    <a class="btn secondary" href="https://groups.google.com/g/cuee-closed-test">① 테스트 그룹 가입하기</a>
+    <a class="btn primary" href="https://play.google.com/apps/testing/com.cuee">② 테스터 참여하고 설치하기</a>
+    <p class="note">②에서 '테스터 되기'를 누른 뒤, 같은 페이지의 'Google Play에서 다운로드'로 설치하세요. 아이폰은 아직 지원하지 않습니다.</p>
+  </section>
+
+  <footer>
+    <p>경상국립대학교 창업동아리 큐(CUEE)</p>
+    <p><a href="https://gyugyutae.github.io/cuee-privacy/">개인정보 처리방침</a></p>
+    <p>큐는 한국철도공사(코레일)와 무관한 독립 개발 앱이며, 코레일+ 앱 위에 안내를 표시합니다. 코레일, 코레일+는 각 권리자의 상표입니다.</p>
+  </footer>
+</main>
+</body>
+</html>
